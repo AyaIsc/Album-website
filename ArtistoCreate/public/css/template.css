@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  background-color: #fdfdfd;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Style the header */
+#header {
+  background-color: #FFC1E3; /* Soft pink */
+  padding: 20px;
+  text-align: center;
+  font-size: 24px;
+  color: white;
+  border-bottom: 5px solid #FF9EC6;
+  font-weight: 700;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the navigation menu */
+#nav {
+  float: left;
+  width: 20%;
+  height: 100vh;
+  background: #E3F2FD; /* Light blue */
+  padding: 20px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  border-right: 2px solid #BBDEFB;
+  border-radius: 0 8px 8px 0;
+}
+
+#nav ul {
+  list-style-type: none;
+}
+
+#nav ul li {
+  margin-bottom: 10px;
+}
+
+#nav ul li a {
+  display: block;
+  padding: 10px 15px;
+  background: #90CAF9; /* Medium blue */
+  color: white;
+  font-weight: 500;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+#nav ul li a:hover {
+  background: #42A5F5; /* Darker blue for hover */
+  text-decoration: none;
+}
+
+/* Style the main article section */
+#article {
+  float: left;
+  padding: 20px;
+  width: 75%;
+  background-color: #FAFAFA; /* Soft white */
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+}
+
+#article div {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 15px;
+  background: #FFFFFF;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Clear floats */
+#section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+#footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #FF9EC6; /* Softer pink */
+  padding: 15px;
+  text-align: center;
+  color: white;
+  font-size: 14px;
+  font-weight: 600;
+  border-top: 3px solid #FFC1E3;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: #007BFF;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #0056b3;
+}
+
+/* Responsive layout */
+@media (max-width: 600px) {
+  #nav,
+  #article {
+    width: 100%;
+    float: none;
+    height: auto;
+  }
+  
+  #nav {
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
